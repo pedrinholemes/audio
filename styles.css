@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+#analyser_render {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+
+  z-index: 2;
+}
+
+#devices {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000;
+
+  color: #fff;
+
+  font-family: "Roboto", sans-serif;
+
+  position: absolute;
+  z-index: 4;
+}
+
+#devices-list li {
+  cursor: pointer;
+}
+#devices-list li + li {
+  margin-top: 1rem;
+}
